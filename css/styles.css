@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:opsz,wght,SOFT@9..144,900,100&display=swap");
+.fraunces-font {
+  font-family: "Fraunces";
+}
+
+.barlow-font-900 {
+  font-family: "Barlow";
+  font-weight: 900;
+}
+
 .centered-text {
   text-align: center;
+}
+
+.capitalize-text {
+  text-transform: uppercase;
 }
 
 .overlay-container {
@@ -11,17 +24,10 @@
   width: 100%;
 }
 
-.fraunces-font {
-  font-family: "Fraunces";
-}
-
-.barlow-font-900 {
-  font-family: "Barlow";
-  font-weight: 900;
-}
-
-.capitalize-text {
-  text-transform: uppercase;
+/* Navbar */
+.navbar {
+  position: absolute;
+  z-index: 10;
 }
 
 /* Header */
@@ -117,6 +123,11 @@
   font-weight: 600;
   font-size: 28px;
   color: hsl(168, 34%, 41%);
+}
+
+.service-item {
+  display: inline;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

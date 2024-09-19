@@ -7,52 +7,50 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Sunnyside Agency</title>
-
-  <link rel="stylesheet" href="/css/styles.css">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container"> 
 
-    <nav class="navbar navbar-expand-lg">
-      <a href="#" class="navbar-brand barlow-font-900">sunnyside</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationMenuitems">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div id="navigationMenuitems" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">Services</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      
-      
-      
-    </nav>
-
-    <!-- First Row -->
-    <header class="row overlay-container" id="mainHeaderContainer">
-      <img class="img-fluid p-0 overlay-image" src="/assets/images/desktop/image-header.jpg" alt="Header image">
-      <h1 class="header-main-text fraunces-font capitalize-text">We are creatives</h1>
-      <!-- <img class="row header-arrow" src="/assets/images/icons/icon-arrow-down.svg" alt=""> -->
-    </header>
+    <div class="top-container">
+      <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand barlow-font-900">sunnyside</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationMenuitems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div id="navigationMenuitems" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- First Row -->
+      <header class="row overlay-container" id="mainHeaderContainer">
+        <img class="img-fluid p-0 overlay-image" src="/assets/images/desktop/image-header.jpg" alt="Header image">
+        <h1 class="header-main-text fraunces-font capitalize-text">We are creatives</h1>
+        <!-- <img class="row header-arrow" src="/assets/images/icons/icon-arrow-down.svg" alt=""> -->
+      </header>
+    </div>
 
     <!-- Second Row -->
     <section class="row">
@@ -72,7 +70,11 @@
 
       <!-- Right side -->
       <div class="col col-xl-6 p-0">
-        <img class="img-fluid" src="/assets/images/desktop/image-transform.jpg" alt="">
+        <picture>
+          <!-- <source media="(min-width: 650px)" srcset="/assets/images/desktop/image-transform.jpg"> -->
+          <img class="img-fluid" src="/assets/images/desktop/image-transform.jpg" alt="An image of an egg">
+        </picture>
+        
       </div>
     </section> <!-- End Second Row -->
 
@@ -102,37 +104,36 @@
     <!-- Fourth Row -->
     <section class="row">
       <!-- Left side -->
-      <div class="p-0 col col-xl-6">
-        <div class="overlay-container">
-          <img class="img-fluid overlay-image" src="/assets/images/desktop/image-graphic-design.jpg" alt="Graphic Design image">
-          
-          <div class="overlay-main-text">
-            <h2 class="fraunces-font graphicDesignTextColor" id="graphicDesignTitle">Graphic design</h2>
-
-            <p id="graphicDesignText" class="graphicDesignTextColor">
-              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-            </p>
+        <article class="p-0 col col-xl-6">
+          <div class="overlay-container">
+            <img class="img-fluid overlay-image" src="/assets/images/desktop/image-graphic-design.jpg" alt="Graphic Design image">
+            
+            <div class="overlay-main-text">
+              <h2 class="fraunces-font graphicDesignTextColor" id="graphicDesignTitle">Graphic design</h2>
+  
+              <p id="graphicDesignText" class="graphicDesignTextColor">
+                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+              </p>
+            </div>
+  
           </div>
-
-        </div>
-      </div>
+        </article>
 
       <!-- Right side -->
-      <div class="p-0 col col-xl-6">
-        <div class="overlay-container">
-          <img class="img-fluid overlay-image" src="/assets/images/desktop/image-photography.jpg" alt="Photography image">
-
-          <div class="overlay-main-text">  
-            <h2 class="fraunces-font photographyTextColor" id="photographyTitle">Photography</h2>
-
-            <p id="photographyText" class="photographyTextColor">
-              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-            </p>
+        <article class="p-0 col col-xl-6">
+          <div class="overlay-container">
+            <img class="img-fluid overlay-image" src="/assets/images/desktop/image-photography.jpg" alt="Photography image">
+  
+            <div class="overlay-main-text">  
+              <h2 class="fraunces-font photographyTextColor" id="photographyTitle">Photography</h2>
+  
+              <p id="photographyText" class="photographyTextColor">
+                Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+              </p>
+            </div>
+            
           </div>
-
-         
-        </div>
-      </div>
+        </article>
     </section> <!-- End Fourth Row -->
 
     <section class="container" id="testimonialsSection">
@@ -184,22 +185,25 @@
     </section>
 
     <footer class="row footer-background">
-      <div class="row centered-text" id="sunnyside-footer-text">
-        <p class="barlow-font-900">sunnyside</p>
-      </div>
-      <div class="row">
-        <p class="col">About</p>
-        <p class="col">Services</p>
-        <p class="col">Projects</p>
-        <p class="col">Contact</p>
-      </div>
+      <nav>
+        <div class="row centered-text" id="sunnyside-footer-text">
+          <p class="barlow-font-900">sunnyside</p>
+        </div>
+  
+        <div id="services-list" class="row text-center">
+          <p class="service-item">About</p>
+          <p class="service-item">Services</p>
+          <p class="service-item">Projects</p>
+          <p class="service-item">Contact</p>
+        </div>
+      </nav>
 
-      <div class="row">
-        <img class="col logo" src="/assets/images/icons/icon-facebook.svg" alt="Facebook logo">
-        <img class="col logo" src="/assets/images/icons/icon-instagram.svg" alt="Instragram logo">
-        <img class="col logo" src="/assets/images/icons/icon-twitter.svg" alt="Twitter logo">
-        <img class="col logo" src="/assets/images/icons/icon-pinterest.svg" alt="Pinterest logo">
-      </div>
+      <ul id="logo-container" class="text-center">
+        <li><img class="col logo" src="/assets/images/icons/icon-facebook.svg" alt="Facebook logo"></li>
+        <li><img class="col logo" src="/assets/images/icons/icon-instagram.svg" alt="Instragram logo"></li>
+        <li><img class="col logo" src="/assets/images/icons/icon-twitter.svg" alt="Twitter logo"></li>
+        <li><img class="col logo" src="/assets/images/icons/icon-pinterest.svg" alt="Pinterest logo"></li>
+      </ul>
     </footer>
     
   </div>
